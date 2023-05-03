@@ -1,5 +1,12 @@
 {
   "extends": "tsconfig/react-library.json",
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }
