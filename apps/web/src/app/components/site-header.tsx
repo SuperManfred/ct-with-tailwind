@@ -2,9 +2,6 @@ import Link from "next/link";
 
 import { button } from "../../../../../packages/ui/src/button";
 
-// import { Icons } from "@/components/icons";
-// import { MainNav } from "@/components/main-nav";
-// import { ThemeToggle } from "@/components/theme-toggle";
 import { siteConfig } from "../../config/site";
 import { MainNav } from "./main-nav";
 import { Icons } from "./icons";
