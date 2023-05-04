@@ -3,7 +3,7 @@
 import * as React from "react";
 import { useTheme } from "next-themes";
 
-import { TVButton as Button } from "../../../../../packages/ui/src/button";
+import { Button } from "../../../../../packages/ui/src/button";
 import { Icons } from "./icons";
 
 export function ThemeToggle() {

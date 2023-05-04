@@ -1,5 +1,5 @@
+import { Button } from "../../../../packages/ui/src/button";
 import { CheckboxAcceptTerms } from "./Checkbox";
-import { TVButton } from "../../../../packages/ui/src/button";
 
 export default function IndexPage() {
   return (
@@ -19,7 +19,7 @@ export default function IndexPage() {
         <CheckboxAcceptTerms />
       </div>
       <div className="flex gap-4">
-        <TVButton
+        <Button
           size={{
             xs: "xs",
             sm: "sm",
@@ -31,8 +31,8 @@ export default function IndexPage() {
         >
           {" "}
           Documentation{" "}
-        </TVButton>
-        <TVButton
+        </Button>
+        <Button
           variant="outline"
           // make size prop use the responsiveVariants to change the size of the button to match tailwindcss breakpoints so that when the screen size changes, the button size changes too
           size={{
@@ -45,8 +45,8 @@ export default function IndexPage() {
           }}
         >
           GitHub
-        </TVButton>
-        <TVButton
+        </Button>
+        <Button
           variant="disabled"
           // make size prop use the responsiveVariants to change the size of the button to match tailwindcss breakpoints so that when the screen size changes, the button size changes too
           size={{
@@ -59,7 +59,7 @@ export default function IndexPage() {
           }}
         >
           Disabled
-        </TVButton>
+        </Button>
       </div>
     </section>
   );
