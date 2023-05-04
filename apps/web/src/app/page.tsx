@@ -1,5 +1,5 @@
-import { Button } from "../../../../packages/ui/src/button";
 import { CheckboxAcceptTerms } from "./Checkbox";
+import { Button } from "../../../../packages/ui/src/button";
 
 export default function IndexPage() {
   return (
@@ -18,7 +18,7 @@ export default function IndexPage() {
       <div>
         <CheckboxAcceptTerms />
       </div>
-      <div className="flex gap-4">
+      {/* <div className="flex gap-4">
         <Button
           size={{
             xs: "xs",
@@ -60,7 +60,7 @@ export default function IndexPage() {
         >
           Disabled
         </Button>
-      </div>
+      </div> */}
     </section>
   );
 }

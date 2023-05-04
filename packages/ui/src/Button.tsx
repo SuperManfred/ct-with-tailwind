@@ -51,9 +51,19 @@ type ButtonVariants = VariantProps<typeof button>;
 
 interface ButtonProps extends ButtonVariants {
   children: React.ReactNode;
-  // onClick: React.MouseEventHandler<HTMLButtonElement>;
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 export const Button = (props: ButtonProps) => {
-  return <button className={button(props)}>{props.children}</button>;
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    if (props.onClick) {
+      props.onClick(event);
+    }
+  };
+
+  return (
+    <button className={button(props)} onClick={handleClick}>
+      {props.children}
+    </button>
+  );
 };
