@@ -1,3 +1,4 @@
+import React from 'react'
 import { tv, type VariantProps } from "tailwind-variants";
 
 export const button = tv(
@@ -50,6 +51,7 @@ type ButtonVariants = VariantProps<typeof button>;
 
 interface ButtonProps extends ButtonVariants {
   children: React.ReactNode;
+  onClick: React.MouseEventHandler<HTMLButtonElement>
 }
 
 export const TVButton = (props: ButtonProps) => {
