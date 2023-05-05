@@ -1,5 +1,15 @@
 import { CheckboxAcceptTerms } from "./Checkbox";
 import { Button } from "../../../../packages/ui/src/button";
+import {
+  ButtonGroup,
+  ButtonGroupSizes,
+  ButtonGroupStates,
+  ButtonGroupVariants,
+  ButtonIcon,
+  ButtonSizes,
+  ButtonStates,
+  ButtonVariants,
+} from "./components/buttons";
 
 export default function IndexPage() {
   return (
@@ -18,49 +28,16 @@ export default function IndexPage() {
       <div>
         <CheckboxAcceptTerms />
       </div>
-      {/* <div className="flex gap-4">
-        <Button
-          size={{
-            xs: "xs",
-            sm: "sm",
-            md: "md",
-            lg: "lg",
-            xl: "xl",
-            "2xl": "2xl",
-          }}
-        >
-          {" "}
-          Documentation{" "}
-        </Button>
-        <Button
-          variant="outline"
-          // make size prop use the responsiveVariants to change the size of the button to match tailwindcss breakpoints so that when the screen size changes, the button size changes too
-          size={{
-            xs: "xs",
-            sm: "sm",
-            md: "md",
-            lg: "lg",
-            xl: "xl",
-            "2xl": "2xl",
-          }}
-        >
-          GitHub
-        </Button>
-        <Button
-          variant="disabled"
-          // make size prop use the responsiveVariants to change the size of the button to match tailwindcss breakpoints so that when the screen size changes, the button size changes too
-          size={{
-            xs: "xs",
-            sm: "sm",
-            md: "md",
-            lg: "lg",
-            xl: "xl",
-            "2xl": "2xl",
-          }}
-        >
-          Disabled
-        </Button>
-      </div> */}
+      <div
+        // leave some whitespace between the elements here
+        className="flex flex-col items-start gap-4"
+      >
+        {/* render ever export of buttons */}
+        <ButtonVariants />
+        <ButtonSizes />
+        <ButtonStates />
+        <ButtonIcon />
+      </div>
     </section>
   );
 }
